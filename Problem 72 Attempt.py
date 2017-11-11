@@ -14,11 +14,18 @@ class Fraction:
         print("{num} {denom}".format(num = self.numerator, denom = self.denominator))
 
 fraclist = []
-for i in range(2, 10000001):
+for i in range(2, 1000002, 2):
+    for j in range(1, i, 2):
+        frac = Fraction(j, i)
+        if frac.reducecheck():
+            frac.display()
+            fraclist.append(frac)
+            
+for i in range(1, 1000001, 2):
     for j in range(1, i):
         frac = Fraction(j, i)
         if frac.reducecheck():
-            #frac.display()
+            frac.display()
             fraclist.append(frac)
 
 print(len(fraclist))
