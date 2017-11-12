@@ -1,6 +1,6 @@
 from math import floor
 #Replace with your filepath
-lines = open("D:\Documents\Python\PEuler\Problem 13 data.txt").read().splitlines()
+lines = open("D:\Documents\Python\PEuler\Problem 013 data.txt").read().splitlines()
 digitsum = []
 
 for num in lines:
