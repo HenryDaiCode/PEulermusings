@@ -1,5 +1,5 @@
 #Replace with your filepath
-numbers = open("D:\Documents\Python\PEuler\Problem 11 data.txt").read().split()
+numbers = open("D:\Documents\Python\PEuler\Problem 011 data.txt").read().split()
 
 #converts array "coodinates" into the correct list index
 def arrayconv(x, y):
