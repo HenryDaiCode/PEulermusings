@@ -7,6 +7,9 @@ def pdiv(n):
     if (not isinstance(n, int)) or (n <= 0):
         raise ValueError("Please enter a positive integer")
     divisors = set()
+    #Takes care of special case
+    if n == 1:
+        return divisors
     divisors.add(1)
     #Takes care of special case
     if n == 2:
