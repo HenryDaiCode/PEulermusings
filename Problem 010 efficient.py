@@ -7,9 +7,7 @@ def primes(n):
         return []
     elif n == 3:
         return [2]
-    numbers = []
-    numbers.append(False)
-    numbers.append(False)
+    numbers = [False, False]
     for i in range(2, n + 1):
         numbers.append(True)
     j = 2
