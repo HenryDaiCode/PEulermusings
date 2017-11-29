@@ -21,6 +21,5 @@ def primes(n):
                 numbers[multiplej] = False
                 multiplej += j
         j += 1
-    primelist = []
     primelist = [index for index, boolean in enumerate(numbers) if boolean == True]
     return primelist
